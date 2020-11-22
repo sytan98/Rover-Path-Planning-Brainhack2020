@@ -1,6 +1,7 @@
 # Rover-Path-Planning-Brainhack2020
 
 This was WASD++'s attempt for the finals of the [DSTA BrainHack 2020](https://www.dsta.gov.sg/brainhack)
+
 Contributors: Daryl Lee, Ming Chong, Alvin, Wei Xiong, Kang Liang and Si Yu (me!)
 
 ## Purpose
