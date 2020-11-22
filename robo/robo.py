@@ -114,12 +114,10 @@ class Robo():
         lower = np.array([200,200,200], dtype = "uint8")
         upper = np.array([255,255,255], dtype = "uint8")
         mask = cv2.inRange(image, lower, upper)
-        print(mask.shape)
         output = cv2.bitwise_and(image, image, mask=mask)
-        print(output.shape)
         gray = cv2.cvtColor(output,cv2.COLOR_BGR2GRAY)
         cv2.imwrite("./images/outputimages/gray.jpg", gray)
-        return gray
+        return output
 
     def findimgwSE(self):
         for root, dirs, files in os.walk(self.directory, topdown = False):

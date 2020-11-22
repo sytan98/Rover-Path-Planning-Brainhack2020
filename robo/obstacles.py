@@ -43,7 +43,7 @@ class Obstacles:
             mask = cv2.inRange(image, lower, upper)
             output = cv2.bitwise_and(image, image, mask = mask)
             masks.append(output)
-            filename = "./Path_planning/outputimages/output" +str(i) +".png"
+            filename = "./images/outputimages/output" +str(i) +".png"
             cv2.imwrite(filename, output)
             i += 1
 
